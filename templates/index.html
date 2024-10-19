@@ -19,7 +19,7 @@
   
 <link href="./static/css/main.3f6952e4.css" rel="stylesheet"></head>
 
-<body class="minimal">
+<body class="minimal" style="background-color: black;">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
@@ -49,9 +49,7 @@
   </nav>
 </header>
 <!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container
-      white-text-container" style="background-image:
-      url('./static/assets/images/colores.jpeg')">
+  <div id= "random-bg" class="hero-full-container background-image-container white-text-container">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -61,8 +59,8 @@
                 <span id="typed-strings">
                   <span>I'm Gerardo</span>
                   <span>AI Developer</span>
-                  <span>Passionated for Music</span>
-                  <span>Snake Whisperer</span>
+                  <span>random_description_2</span>
+                  <span>random_text_3</span>
                 </span>
                 <span id="typed"></span>
               </h1>
@@ -72,6 +70,29 @@
       </div>
     </div>
   </div>
+
+
+<!-- JavaScript to randomize background image -->
+<script>
+// Array of image URLs
+
+    const images = [
+        './static/assets/images/colores-1.jpeg',
+        './static/assets/images/colores-2.jpeg',
+        './static/assets/images/colores-3.jpeg',
+        './static/assets/images/colores-4.jpeg',
+    ];
+
+// Get a random image from the list
+
+    const randomImage = images [Math.floor(Math.random()* images.length)];
+
+// Apply the random image as the background
+
+    document.getElementById("random-bg").style.backgroundImage =`url(${randomImage})`;
+
+</script>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
