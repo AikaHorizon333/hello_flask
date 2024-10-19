@@ -1,0 +1,6 @@
+# Ignore Environment
+.env
+
+# Ignore System files
+.DS_Store
+
